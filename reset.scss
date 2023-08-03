@@ -1,4 +1,46 @@
-// https://piccalil.li/blog/a-modern-css-reset
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+:root {
+  --text: #050505;
+  --background: #fafafa;
+  --primary: #ac1178;
+  --secondary: #fad1d8;
+  --accent: #e8173a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #fafafa;
+    --background: #050505;
+    --primary: #ac1178;
+    --secondary: #2e050c;
+    --accent: #f17489;
+  }
+}
+
+
+/* GENERAL STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.4;
+  /* color-scheme: light dark; */
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  background-color: var(--background);
+  overflow-x: hidden;
+}
 
 /* Box sizing rules */
 *,
@@ -8,17 +50,9 @@
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+* {  
   margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
